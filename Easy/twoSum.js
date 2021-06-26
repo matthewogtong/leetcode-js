@@ -33,6 +33,8 @@ Only one valid answer exists.
 Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
 */
 
+// SOLUTION 1
+
 function twoSum(nums, target) {
     
     let obj = {}
@@ -52,3 +54,24 @@ function twoSum(nums, target) {
 Runtime: 72 ms, faster than 96.01% of JavaScript online submissions for Two Sum.
 Memory Usage: 40.4 MB, less than 19.11% of JavaScript online submissions for Two Sum.
 */
+
+// SOLUTION 2
+
+function twoSum(nums, target) {
+
+    let obj = {}
+
+    for (let i = 0; i < nums.length; i++) {
+        if (obj[nums[i]] >= 0) {
+            return [obj[nums[i]], i]
+        } else {
+            obj[target - nums[i]] = i
+        }
+    }
+}
+
+/*
+Runtime: 72 ms, faster than 96.01% of JavaScript online submissions for Two Sum.
+Memory Usage: 40.4 MB, less than 21.39% of JavaScript online submissions for Two Sum.
+*/
+

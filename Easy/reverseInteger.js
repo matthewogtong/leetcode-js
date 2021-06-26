@@ -73,7 +73,8 @@ function reverse(x) {
 
 console.log(reverse(102))
 
-/* Runtime: 88 ms, faster than 91.13% of JavaScript online submissions for Reverse Integer.
+/* 
+Runtime: 88 ms, faster than 91.13% of JavaScript online submissions for Reverse Integer.
 Memory Usage: 40.7 MB, less than 14.98% of JavaScript online submissions for Reverse Integer.
 */
 
